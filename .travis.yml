@@ -21,5 +21,4 @@ script:
   - java -version
   - echo $JAVA_HOME
   - $GAUGE_PREFIX/bin/gauge version
-  - PATH=$GAUGE_PREFIX/bin:$PATH TAGS="\!unimplemented" 
-  - ./gradlew test
+  - PATH=$GAUGE_PREFIX/bin:$PATH TAGS="\!unimplemented" ./gradlew javaFT

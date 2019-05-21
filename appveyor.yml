@@ -41,6 +41,6 @@ test_script:
 
     gauge -v
 
-    ./gradlew clean javaFT
+    gradlew.bat clean javaFT
 
     if ($LastExitCode -ne 0) { throw "Gauge Functional Tests failed" }
