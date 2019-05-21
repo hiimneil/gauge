@@ -41,6 +41,6 @@ test_script:
 
     gauge -v
 
-    ./gradlew clean test -Penv=ci-java -Ptags="java" -PinParallel=true
+    ./gradlew clean javaFT
 
     if ($LastExitCode -ne 0) { throw "Gauge Functional Tests failed" }
