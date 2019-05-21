@@ -41,6 +41,6 @@ test_script:
 
     gauge -v
 
-    mvn clean install -q -Denv=ci-java -Dtags="java" -DinParallel=true
+    ./gradlew clean test -Penv=ci-java -Ptags="java" -PinParallel=true
 
     if ($LastExitCode -ne 0) { throw "Gauge Functional Tests failed" }
